@@ -1,0 +1,9 @@
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.load_tarefa.resources
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+E:\executaveis liberados\23Habitos\23habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
