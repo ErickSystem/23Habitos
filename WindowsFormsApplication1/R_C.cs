@@ -36,8 +36,8 @@ namespace WindowsFormsApplication1
             public DateTime data { get; set; }
         }
 
-        private List<Consequencia> listConsequencia = new List<Consequencia>();
-        private List<Recompensa> listRecompensa = new List<Recompensa>();
+        public List<Consequencia> listConsequencia = new List<Consequencia>();
+        public List<Recompensa> listRecompensa = new List<Recompensa>();
 
         private int codigoConsequencia = -1;
         private int codigoRecompensa = -1;
@@ -108,13 +108,16 @@ namespace WindowsFormsApplication1
                 int nivelR = Convert.ToInt16(num_nivelRecompensa.Value);
                 if (nivelC > 5 || nivelR > 5)
                 {
-                    MessageBox.Show("Nível não pode ser maior que 5");
+                    MessageBox.Show("Nível não pode ser maior que cinco");
+                }
+                if (nivelC == 0 || nivelR == 0)
+                {
+                    MessageBox.Show("Nível precisa ser maior que zero");
                 }
                 else
                 {
 
                     mask_data.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals; // tira a formatação
-                   
 
                     int cont = 0;
                     if (text_Consequencia.Text != "" && num_nivelConsequencia.Value > 0 && mask_data.Text != "") 
@@ -222,40 +225,47 @@ namespace WindowsFormsApplication1
             int nivelR = Convert.ToInt16(num_nivelRecompensa.Value);
             if (nivelC > 5 || nivelR > 5)
             {
-                MessageBox.Show("Nível de prioridade não pode ser maior que 5");
+                MessageBox.Show("Nível de prioridade não pode ser maior que cinco");
+            }
+            else if (nivelC == 0 || nivelR == 0)
+            {
+                MessageBox.Show("Nível precisa ser maior que zero");
             }
             else if (alterarDados == true)
             {
                 int codConsequencia = Convert.ToInt32(datagrid_Consequencia.CurrentRow.Cells[0].Value);
                 int codRecompensa = Convert.ToInt32(datagrid_Recompensa.CurrentRow.Cells[0].Value);
 
-                if (text_Consequencia.Text != "" || num_nivelConsequencia.Value > 0 || mask_data.Text != "")
-                {
+                mask_data.TextMaskFormat = MaskFormat.IncludePromptAndLiterals; // retorna a formatação
 
+                if (text_Consequencia.Text != "" && num_nivelConsequencia.Value >= 0 && mask_data.Text != "")
+                {
+                    mask_data.TextMaskFormat = MaskFormat.IncludePromptAndLiterals; // retorna a formatação
                     var consequencia = listConsequencia.SingleOrDefault(x => x.idConsequencia == codConsequencia);
                     consequencia.consequencia = text_Consequencia.Text;
                     consequencia.nivel_consequancia = nivelC;
                     consequencia.data = Convert.ToDateTime(mask_data.Text);
+                    MessageBox.Show("Alterado com Sucesso!");
                 }
-                if(text_Recompensa.Text != "" || num_nivelRecompensa.Value > 0 || mask_data.Text != "")
+                if(text_Recompensa.Text != "" && num_nivelRecompensa.Value >= 0 && mask_data.Text != "")
                 {
-
+                    mask_data.TextMaskFormat = MaskFormat.IncludePromptAndLiterals; // retorna a formatação
                     var recompensa = listRecompensa.SingleOrDefault(x => x.idRecompensa == codRecompensa);
                     recompensa.recompensa = text_Recompensa.Text;
                     recompensa.nivel_recompensa = nivelR;
                     recompensa.data = Convert.ToDateTime(mask_data.Text);
+                    MessageBox.Show("Alterado com Sucesso!");
                 }
                 CarregarDataGridViewConsequencia();
                 CarregarDataGridViewRecompensa();
                 LimparControle();
                 codigoConsequencia = -1;
                 codigoConsequencia = -1;
-
-                MessageBox.Show("Alterado com sucesso");
+                
             }
             else
             {
-                MessageBox.Show("Erro ao alterar");
+                MessageBox.Show("Campos vazios, você precisa preenche-los. 'CAMPO DATA É OBRIGATÓRIO'");
             }
 
         }
@@ -274,6 +284,57 @@ namespace WindowsFormsApplication1
             btn_Salvar.Visible = true;
             
 
+        }
+
+        private void btn_Excluir_Click(object sender, EventArgs e)
+        {
+            int codConsequencia = Convert.ToInt32(datagrid_Consequencia.CurrentRow.Cells[0].Value);
+            int codRecompensa = Convert.ToInt32(datagrid_Recompensa.CurrentRow.Cells[0].Value);
+
+            var consequencia = listConsequencia.SingleOrDefault(x => x.idConsequencia == codConsequencia);
+            var recompensa = listRecompensa.SingleOrDefault(x => x.idRecompensa == codRecompensa);
+
+            mask_data.TextMaskFormat = MaskFormat.IncludePromptAndLiterals; // retorna a formatação
+
+
+            if (codConsequencia > 0)
+            {
+                if (text_Consequencia.Text != "" && num_nivelConsequencia.Value >= 0 && mask_data.Text != "")
+                {
+                    mask_data.TextMaskFormat = MaskFormat.IncludePromptAndLiterals; // retorna a formatação
+                    listConsequencia.Remove(consequencia);
+                    MessageBox.Show("Consequencia excluída com sucesso!");
+                }
+                
+            }
+            if(codRecompensa > 0)
+            {
+                if (text_Recompensa.Text != "" && num_nivelRecompensa.Value >= 0 && mask_data.Text != "")
+                {
+                    mask_data.TextMaskFormat = MaskFormat.IncludePromptAndLiterals; // retorna a formatação
+                    listRecompensa.Remove(recompensa);
+                    MessageBox.Show("Recompensa excluída com sucesso!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Erro ao excluir");
+            }
+
+            CarregarDataGridViewConsequencia();
+            CarregarDataGridViewRecompensa();
+            LimparControle();
+            codigoConsequencia = -1;
+            codigoRecompensa =   -1;
+
+
+        }
+
+        private void btn_FecharTarefa_Click(object sender, EventArgs e)
+        {
+            var checkTarefa = new Visualizador();
+            this.Hide();
+            checkTarefa.ShowDialog();
         }
     }
 }

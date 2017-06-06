@@ -17,3 +17,4 @@ C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsA
 C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
 C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.R_C.resources
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Visualizador.resources
