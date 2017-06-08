@@ -16,5 +16,22 @@ C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsA
 C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.load_tarefa.resources
 C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
-C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.R_C.resources
-C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Visualizador.resources
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.load_tarefa.resources
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+E:\EXECUTAVEIS LIBERADOS\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.load_tarefa.resources
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Users\Erick\Desktop\Mega-Nuvem\PROGRAMMING\REPOSITORY\23Habitos - Copia\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.AgendaTarefas.resources

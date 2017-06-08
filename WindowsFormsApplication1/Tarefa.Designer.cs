@@ -28,41 +28,83 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.datagrid_ListTarefas = new System.Windows.Forms.DataGridView();
             this.btn_Salvar = new System.Windows.Forms.Button();
             this.text_Tarefa = new System.Windows.Forms.TextBox();
             this.num_nivelTarefa = new System.Windows.Forms.NumericUpDown();
             this.btn_Alterar = new System.Windows.Forms.Button();
             this.btn_Excluir = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label_Tarefa = new System.Windows.Forms.Label();
+            this.label_NivelT = new System.Windows.Forms.Label();
             this.mask_data = new System.Windows.Forms.MaskedTextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.label_Data = new System.Windows.Forms.Label();
             this.btn_ListTarefas = new System.Windows.Forms.Button();
-            this.btn_RC = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label_Dayweek = new System.Windows.Forms.Label();
             this.cmbo_Dayweek = new System.Windows.Forms.ComboBox();
             this.btn_Criarnovo = new System.Windows.Forms.Button();
+            this.label_NivelR = new System.Windows.Forms.Label();
+            this.label_Recompensa = new System.Windows.Forms.Label();
+            this.num_nivelRecompensa = new System.Windows.Forms.NumericUpDown();
+            this.text_Recompensa = new System.Windows.Forms.TextBox();
+            this.label_NivelC = new System.Windows.Forms.Label();
+            this.label_Consequencia = new System.Windows.Forms.Label();
+            this.num_nivelConsequencia = new System.Windows.Forms.NumericUpDown();
+            this.text_Consequencia = new System.Windows.Forms.TextBox();
+            this.btn_VerAgenda = new System.Windows.Forms.Button();
+            this.checkedListBox_Segunda = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox_Terca = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox_Quarta = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox_Quinta = new System.Windows.Forms.CheckedListBox();
+            this.checkedListBox_Sexta = new System.Windows.Forms.CheckedListBox();
+            this.label_S = new System.Windows.Forms.Label();
+            this.label_T = new System.Windows.Forms.Label();
+            this.label_Q = new System.Windows.Forms.Label();
+            this.label_Quinta = new System.Windows.Forms.Label();
+            this.label_Sexta = new System.Windows.Forms.Label();
+            this.btn_NovaTarefa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_ListTarefas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_nivelTarefa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_nivelRecompensa)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_nivelConsequencia)).BeginInit();
             this.SuspendLayout();
             // 
             // datagrid_ListTarefas
             // 
             this.datagrid_ListTarefas.AccessibleRole = System.Windows.Forms.AccessibleRole.Cursor;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagrid_ListTarefas.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.datagrid_ListTarefas.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_ListTarefas.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.datagrid_ListTarefas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagrid_ListTarefas.DefaultCellStyle = dataGridViewCellStyle12;
             this.datagrid_ListTarefas.GridColor = System.Drawing.SystemColors.Control;
             this.datagrid_ListTarefas.Location = new System.Drawing.Point(190, 84);
             this.datagrid_ListTarefas.Name = "datagrid_ListTarefas";
-            this.datagrid_ListTarefas.Size = new System.Drawing.Size(870, 328);
+            this.datagrid_ListTarefas.Size = new System.Drawing.Size(1088, 328);
             this.datagrid_ListTarefas.TabIndex = 0;
             this.datagrid_ListTarefas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_ListTarefas_CellContentClick);
             // 
             // btn_Salvar
             // 
-            this.btn_Salvar.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Salvar.Location = new System.Drawing.Point(664, 544);
+            this.btn_Salvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Salvar.Location = new System.Drawing.Point(1038, 547);
             this.btn_Salvar.Name = "btn_Salvar";
             this.btn_Salvar.Size = new System.Drawing.Size(117, 82);
             this.btn_Salvar.TabIndex = 1;
@@ -72,7 +114,7 @@
             // 
             // text_Tarefa
             // 
-            this.text_Tarefa.Font = new System.Drawing.Font("Linux Biolinum G", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_Tarefa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.text_Tarefa.Location = new System.Drawing.Point(200, 442);
             this.text_Tarefa.Multiline = true;
             this.text_Tarefa.Name = "text_Tarefa";
@@ -81,7 +123,7 @@
             // 
             // num_nivelTarefa
             // 
-            this.num_nivelTarefa.Font = new System.Drawing.Font("Linux Biolinum G", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_nivelTarefa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.num_nivelTarefa.Location = new System.Drawing.Point(200, 525);
             this.num_nivelTarefa.Name = "num_nivelTarefa";
             this.num_nivelTarefa.Size = new System.Drawing.Size(125, 29);
@@ -90,7 +132,8 @@
             // 
             // btn_Alterar
             // 
-            this.btn_Alterar.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Alterar.Enabled = false;
+            this.btn_Alterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Alterar.ForeColor = System.Drawing.Color.Black;
             this.btn_Alterar.Location = new System.Drawing.Point(190, 12);
             this.btn_Alterar.Name = "btn_Alterar";
@@ -102,7 +145,8 @@
             // 
             // btn_Excluir
             // 
-            this.btn_Excluir.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Excluir.Enabled = false;
+            this.btn_Excluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Excluir.Location = new System.Drawing.Point(303, 12);
             this.btn_Excluir.Name = "btn_Excluir";
             this.btn_Excluir.Size = new System.Drawing.Size(98, 66);
@@ -111,58 +155,58 @@
             this.btn_Excluir.UseVisualStyleBackColor = true;
             this.btn_Excluir.Click += new System.EventHandler(this.btn_Excluir_Click);
             // 
-            // label1
+            // label_Tarefa
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Azure;
-            this.label1.Location = new System.Drawing.Point(196, 415);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 24);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "TAREFA:";
+            this.label_Tarefa.AutoSize = true;
+            this.label_Tarefa.BackColor = System.Drawing.Color.Transparent;
+            this.label_Tarefa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Tarefa.ForeColor = System.Drawing.Color.Azure;
+            this.label_Tarefa.Location = new System.Drawing.Point(196, 415);
+            this.label_Tarefa.Name = "label_Tarefa";
+            this.label_Tarefa.Size = new System.Drawing.Size(108, 25);
+            this.label_Tarefa.TabIndex = 6;
+            this.label_Tarefa.Text = "TAREFA:";
             // 
-            // label2
+            // label_NivelT
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Azure;
-            this.label2.Location = new System.Drawing.Point(196, 474);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(166, 48);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "NÍVEL DE\r\nIMPORTANCIA:";
+            this.label_NivelT.AutoSize = true;
+            this.label_NivelT.BackColor = System.Drawing.Color.Transparent;
+            this.label_NivelT.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_NivelT.ForeColor = System.Drawing.Color.Azure;
+            this.label_NivelT.Location = new System.Drawing.Point(196, 474);
+            this.label_NivelT.Name = "label_NivelT";
+            this.label_NivelT.Size = new System.Drawing.Size(174, 50);
+            this.label_NivelT.TabIndex = 7;
+            this.label_NivelT.Text = "NÍVEL DE\r\nIMPORTANCIA:";
             // 
             // mask_data
             // 
-            this.mask_data.Font = new System.Drawing.Font("Linux Biolinum G", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mask_data.Location = new System.Drawing.Point(200, 600);
+            this.mask_data.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mask_data.Location = new System.Drawing.Point(474, 600);
             this.mask_data.Mask = "00/00/0000";
             this.mask_data.Name = "mask_data";
             this.mask_data.Size = new System.Drawing.Size(125, 29);
             this.mask_data.TabIndex = 8;
             this.mask_data.ValidatingType = typeof(System.DateTime);
             // 
-            // label3
+            // label_Data
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Azure;
-            this.label3.Location = new System.Drawing.Point(196, 573);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 24);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "*DATA:";
+            this.label_Data.AutoSize = true;
+            this.label_Data.BackColor = System.Drawing.Color.Transparent;
+            this.label_Data.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Data.ForeColor = System.Drawing.Color.Azure;
+            this.label_Data.Location = new System.Drawing.Point(470, 575);
+            this.label_Data.Name = "label_Data";
+            this.label_Data.Size = new System.Drawing.Size(88, 25);
+            this.label_Data.TabIndex = 9;
+            this.label_Data.Text = "*DATA:";
             // 
             // btn_ListTarefas
             // 
-            this.btn_ListTarefas.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_ListTarefas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ListTarefas.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btn_ListTarefas.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btn_ListTarefas.Location = new System.Drawing.Point(787, 544);
+            this.btn_ListTarefas.Location = new System.Drawing.Point(1161, 547);
             this.btn_ListTarefas.Name = "btn_ListTarefas";
             this.btn_ListTarefas.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btn_ListTarefas.Size = new System.Drawing.Size(120, 82);
@@ -172,33 +216,21 @@
             this.btn_ListTarefas.UseVisualStyleBackColor = true;
             this.btn_ListTarefas.Click += new System.EventHandler(this.btn_ListTarefas_Click);
             // 
-            // btn_RC
+            // label_Dayweek
             // 
-            this.btn_RC.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_RC.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.btn_RC.Location = new System.Drawing.Point(913, 544);
-            this.btn_RC.Name = "btn_RC";
-            this.btn_RC.Size = new System.Drawing.Size(156, 82);
-            this.btn_RC.TabIndex = 11;
-            this.btn_RC.Text = "Cadastrar \r\nRecompensa/Consequência";
-            this.btn_RC.UseVisualStyleBackColor = true;
-            this.btn_RC.Click += new System.EventHandler(this.btn_RC_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Azure;
-            this.label4.Location = new System.Drawing.Point(499, 415);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(182, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "DIA DA SEMANA:";
+            this.label_Dayweek.AutoSize = true;
+            this.label_Dayweek.BackColor = System.Drawing.Color.Transparent;
+            this.label_Dayweek.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Dayweek.ForeColor = System.Drawing.Color.Azure;
+            this.label_Dayweek.Location = new System.Drawing.Point(196, 575);
+            this.label_Dayweek.Name = "label_Dayweek";
+            this.label_Dayweek.Size = new System.Drawing.Size(196, 25);
+            this.label_Dayweek.TabIndex = 13;
+            this.label_Dayweek.Text = "DIA DA SEMANA:";
             // 
             // cmbo_Dayweek
             // 
-            this.cmbo_Dayweek.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbo_Dayweek.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbo_Dayweek.FormattingEnabled = true;
             this.cmbo_Dayweek.Items.AddRange(new object[] {
             "segunda",
@@ -206,15 +238,15 @@
             "quarta",
             "quinta",
             "sexta"});
-            this.cmbo_Dayweek.Location = new System.Drawing.Point(503, 442);
+            this.cmbo_Dayweek.Location = new System.Drawing.Point(200, 602);
             this.cmbo_Dayweek.Name = "cmbo_Dayweek";
-            this.cmbo_Dayweek.Size = new System.Drawing.Size(178, 32);
+            this.cmbo_Dayweek.Size = new System.Drawing.Size(178, 33);
             this.cmbo_Dayweek.TabIndex = 14;
             // 
             // btn_Criarnovo
             // 
-            this.btn_Criarnovo.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Criarnovo.Location = new System.Drawing.Point(664, 544);
+            this.btn_Criarnovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Criarnovo.Location = new System.Drawing.Point(1038, 547);
             this.btn_Criarnovo.Name = "btn_Criarnovo";
             this.btn_Criarnovo.Size = new System.Drawing.Size(117, 82);
             this.btn_Criarnovo.TabIndex = 15;
@@ -223,22 +255,264 @@
             this.btn_Criarnovo.Visible = false;
             this.btn_Criarnovo.Click += new System.EventHandler(this.btn_Criarnovo_Click);
             // 
+            // label_NivelR
+            // 
+            this.label_NivelR.AutoSize = true;
+            this.label_NivelR.BackColor = System.Drawing.Color.Transparent;
+            this.label_NivelR.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_NivelR.ForeColor = System.Drawing.Color.Azure;
+            this.label_NivelR.Location = new System.Drawing.Point(752, 480);
+            this.label_NivelR.Name = "label_NivelR";
+            this.label_NivelR.Size = new System.Drawing.Size(178, 50);
+            this.label_NivelR.TabIndex = 33;
+            this.label_NivelR.Text = "NÍVEL DESSA \r\nRECOMPENSA:";
+            // 
+            // label_Recompensa
+            // 
+            this.label_Recompensa.AutoSize = true;
+            this.label_Recompensa.BackColor = System.Drawing.Color.Transparent;
+            this.label_Recompensa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Recompensa.ForeColor = System.Drawing.Color.Azure;
+            this.label_Recompensa.Location = new System.Drawing.Point(751, 415);
+            this.label_Recompensa.Name = "label_Recompensa";
+            this.label_Recompensa.Size = new System.Drawing.Size(178, 25);
+            this.label_Recompensa.TabIndex = 32;
+            this.label_Recompensa.Text = "RECOMPENSA:";
+            // 
+            // num_nivelRecompensa
+            // 
+            this.num_nivelRecompensa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_nivelRecompensa.Location = new System.Drawing.Point(756, 531);
+            this.num_nivelRecompensa.Name = "num_nivelRecompensa";
+            this.num_nivelRecompensa.Size = new System.Drawing.Size(125, 29);
+            this.num_nivelRecompensa.TabIndex = 31;
+            // 
+            // text_Recompensa
+            // 
+            this.text_Recompensa.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_Recompensa.Location = new System.Drawing.Point(755, 442);
+            this.text_Recompensa.Name = "text_Recompensa";
+            this.text_Recompensa.Size = new System.Drawing.Size(253, 29);
+            this.text_Recompensa.TabIndex = 30;
+            // 
+            // label_NivelC
+            // 
+            this.label_NivelC.AutoSize = true;
+            this.label_NivelC.BackColor = System.Drawing.Color.Transparent;
+            this.label_NivelC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_NivelC.ForeColor = System.Drawing.Color.Azure;
+            this.label_NivelC.Location = new System.Drawing.Point(470, 474);
+            this.label_NivelC.Name = "label_NivelC";
+            this.label_NivelC.Size = new System.Drawing.Size(199, 50);
+            this.label_NivelC.TabIndex = 29;
+            this.label_NivelC.Text = "NÍVEL DESSA \r\nCONSEQUÊNCIA:";
+            // 
+            // label_Consequencia
+            // 
+            this.label_Consequencia.AutoSize = true;
+            this.label_Consequencia.BackColor = System.Drawing.Color.Transparent;
+            this.label_Consequencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Consequencia.ForeColor = System.Drawing.Color.Azure;
+            this.label_Consequencia.Location = new System.Drawing.Point(472, 415);
+            this.label_Consequencia.Name = "label_Consequencia";
+            this.label_Consequencia.Size = new System.Drawing.Size(199, 25);
+            this.label_Consequencia.TabIndex = 28;
+            this.label_Consequencia.Text = "CONSEQUÊNCIA:";
+            // 
+            // num_nivelConsequencia
+            // 
+            this.num_nivelConsequencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_nivelConsequencia.Location = new System.Drawing.Point(474, 531);
+            this.num_nivelConsequencia.Name = "num_nivelConsequencia";
+            this.num_nivelConsequencia.Size = new System.Drawing.Size(125, 29);
+            this.num_nivelConsequencia.TabIndex = 27;
+            // 
+            // text_Consequencia
+            // 
+            this.text_Consequencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.text_Consequencia.Location = new System.Drawing.Point(475, 442);
+            this.text_Consequencia.Name = "text_Consequencia";
+            this.text_Consequencia.Size = new System.Drawing.Size(253, 29);
+            this.text_Consequencia.TabIndex = 26;
+            // 
+            // btn_VerAgenda
+            // 
+            this.btn_VerAgenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_VerAgenda.ForeColor = System.Drawing.Color.Black;
+            this.btn_VerAgenda.Location = new System.Drawing.Point(1151, 8);
+            this.btn_VerAgenda.Name = "btn_VerAgenda";
+            this.btn_VerAgenda.Size = new System.Drawing.Size(130, 74);
+            this.btn_VerAgenda.TabIndex = 34;
+            this.btn_VerAgenda.Text = "Ver agenda";
+            this.btn_VerAgenda.UseVisualStyleBackColor = true;
+            this.btn_VerAgenda.Click += new System.EventHandler(this.btn_VerAgenda_Click);
+            // 
+            // checkedListBox_Segunda
+            // 
+            this.checkedListBox_Segunda.Font = new System.Drawing.Font("Linux Biolinum G", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox_Segunda.FormattingEnabled = true;
+            this.checkedListBox_Segunda.Location = new System.Drawing.Point(167, 93);
+            this.checkedListBox_Segunda.Name = "checkedListBox_Segunda";
+            this.checkedListBox_Segunda.Size = new System.Drawing.Size(182, 316);
+            this.checkedListBox_Segunda.TabIndex = 35;
+            this.checkedListBox_Segunda.Visible = false;
+            // 
+            // checkedListBox_Terca
+            // 
+            this.checkedListBox_Terca.Font = new System.Drawing.Font("Linux Biolinum G", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox_Terca.FormattingEnabled = true;
+            this.checkedListBox_Terca.Location = new System.Drawing.Point(355, 93);
+            this.checkedListBox_Terca.Name = "checkedListBox_Terca";
+            this.checkedListBox_Terca.Size = new System.Drawing.Size(191, 316);
+            this.checkedListBox_Terca.TabIndex = 36;
+            this.checkedListBox_Terca.Visible = false;
+            // 
+            // checkedListBox_Quarta
+            // 
+            this.checkedListBox_Quarta.Font = new System.Drawing.Font("Linux Biolinum G", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox_Quarta.FormattingEnabled = true;
+            this.checkedListBox_Quarta.Location = new System.Drawing.Point(552, 93);
+            this.checkedListBox_Quarta.Name = "checkedListBox_Quarta";
+            this.checkedListBox_Quarta.Size = new System.Drawing.Size(198, 316);
+            this.checkedListBox_Quarta.TabIndex = 37;
+            this.checkedListBox_Quarta.Visible = false;
+            // 
+            // checkedListBox_Quinta
+            // 
+            this.checkedListBox_Quinta.Font = new System.Drawing.Font("Linux Biolinum G", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox_Quinta.FormattingEnabled = true;
+            this.checkedListBox_Quinta.Location = new System.Drawing.Point(756, 93);
+            this.checkedListBox_Quinta.Name = "checkedListBox_Quinta";
+            this.checkedListBox_Quinta.Size = new System.Drawing.Size(184, 316);
+            this.checkedListBox_Quinta.TabIndex = 38;
+            this.checkedListBox_Quinta.Visible = false;
+            // 
+            // checkedListBox_Sexta
+            // 
+            this.checkedListBox_Sexta.Font = new System.Drawing.Font("Linux Biolinum G", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkedListBox_Sexta.FormattingEnabled = true;
+            this.checkedListBox_Sexta.Location = new System.Drawing.Point(945, 93);
+            this.checkedListBox_Sexta.Name = "checkedListBox_Sexta";
+            this.checkedListBox_Sexta.Size = new System.Drawing.Size(186, 316);
+            this.checkedListBox_Sexta.TabIndex = 39;
+            this.checkedListBox_Sexta.Visible = false;
+            // 
+            // label_S
+            // 
+            this.label_S.AutoSize = true;
+            this.label_S.BackColor = System.Drawing.Color.Transparent;
+            this.label_S.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_S.ForeColor = System.Drawing.Color.Azure;
+            this.label_S.Location = new System.Drawing.Point(197, 54);
+            this.label_S.Name = "label_S";
+            this.label_S.Size = new System.Drawing.Size(112, 24);
+            this.label_S.TabIndex = 40;
+            this.label_S.Text = "SEGUNDA";
+            this.label_S.Visible = false;
+            // 
+            // label_T
+            // 
+            this.label_T.AutoSize = true;
+            this.label_T.BackColor = System.Drawing.Color.Transparent;
+            this.label_T.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_T.ForeColor = System.Drawing.Color.Azure;
+            this.label_T.Location = new System.Drawing.Point(407, 54);
+            this.label_T.Name = "label_T";
+            this.label_T.Size = new System.Drawing.Size(80, 24);
+            this.label_T.TabIndex = 41;
+            this.label_T.Text = "TERÇA";
+            this.label_T.Visible = false;
+            // 
+            // label_Q
+            // 
+            this.label_Q.AutoSize = true;
+            this.label_Q.BackColor = System.Drawing.Color.Transparent;
+            this.label_Q.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Q.ForeColor = System.Drawing.Color.Azure;
+            this.label_Q.Location = new System.Drawing.Point(604, 54);
+            this.label_Q.Name = "label_Q";
+            this.label_Q.Size = new System.Drawing.Size(96, 24);
+            this.label_Q.TabIndex = 42;
+            this.label_Q.Text = "QUARTA";
+            this.label_Q.Visible = false;
+            // 
+            // label_Quinta
+            // 
+            this.label_Quinta.AutoSize = true;
+            this.label_Quinta.BackColor = System.Drawing.Color.Transparent;
+            this.label_Quinta.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Quinta.ForeColor = System.Drawing.Color.Azure;
+            this.label_Quinta.Location = new System.Drawing.Point(797, 54);
+            this.label_Quinta.Name = "label_Quinta";
+            this.label_Quinta.Size = new System.Drawing.Size(95, 24);
+            this.label_Quinta.TabIndex = 43;
+            this.label_Quinta.Text = "QUINTA";
+            this.label_Quinta.Visible = false;
+            // 
+            // label_Sexta
+            // 
+            this.label_Sexta.AutoSize = true;
+            this.label_Sexta.BackColor = System.Drawing.Color.Transparent;
+            this.label_Sexta.Font = new System.Drawing.Font("Linux Biolinum G", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Sexta.ForeColor = System.Drawing.Color.Azure;
+            this.label_Sexta.Location = new System.Drawing.Point(988, 54);
+            this.label_Sexta.Name = "label_Sexta";
+            this.label_Sexta.Size = new System.Drawing.Size(74, 24);
+            this.label_Sexta.TabIndex = 44;
+            this.label_Sexta.Text = "SEXTA";
+            this.label_Sexta.Visible = false;
+            // 
+            // btn_NovaTarefa
+            // 
+            this.btn_NovaTarefa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_NovaTarefa.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btn_NovaTarefa.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.btn_NovaTarefa.Location = new System.Drawing.Point(1151, 88);
+            this.btn_NovaTarefa.Name = "btn_NovaTarefa";
+            this.btn_NovaTarefa.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btn_NovaTarefa.Size = new System.Drawing.Size(127, 82);
+            this.btn_NovaTarefa.TabIndex = 45;
+            this.btn_NovaTarefa.Text = "Criar Tarefa";
+            this.btn_NovaTarefa.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btn_NovaTarefa.UseVisualStyleBackColor = true;
+            this.btn_NovaTarefa.Visible = false;
+            this.btn_NovaTarefa.Click += new System.EventHandler(this.btn_NovaTarefa_Click);
+            // 
             // load_tarefa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsApplication1.Properties.Resources.fundo_textuta_blue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1191, 641);
+            this.ClientSize = new System.Drawing.Size(1358, 705);
+            this.Controls.Add(this.btn_NovaTarefa);
+            this.Controls.Add(this.label_Sexta);
+            this.Controls.Add(this.label_Quinta);
+            this.Controls.Add(this.label_Q);
+            this.Controls.Add(this.label_T);
+            this.Controls.Add(this.label_S);
+            this.Controls.Add(this.checkedListBox_Sexta);
+            this.Controls.Add(this.checkedListBox_Quinta);
+            this.Controls.Add(this.checkedListBox_Quarta);
+            this.Controls.Add(this.checkedListBox_Terca);
+            this.Controls.Add(this.checkedListBox_Segunda);
+            this.Controls.Add(this.btn_VerAgenda);
+            this.Controls.Add(this.label_NivelR);
+            this.Controls.Add(this.label_Recompensa);
+            this.Controls.Add(this.num_nivelRecompensa);
+            this.Controls.Add(this.text_Recompensa);
+            this.Controls.Add(this.label_NivelC);
+            this.Controls.Add(this.label_Consequencia);
+            this.Controls.Add(this.num_nivelConsequencia);
+            this.Controls.Add(this.text_Consequencia);
             this.Controls.Add(this.btn_Criarnovo);
             this.Controls.Add(this.cmbo_Dayweek);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label_Dayweek);
             this.Controls.Add(this.btn_ListTarefas);
-            this.Controls.Add(this.btn_RC);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label_Data);
             this.Controls.Add(this.mask_data);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_NivelT);
+            this.Controls.Add(this.label_Tarefa);
             this.Controls.Add(this.btn_Excluir);
             this.Controls.Add(this.btn_Alterar);
             this.Controls.Add(this.num_nivelTarefa);
@@ -254,6 +528,8 @@
             this.Load += new System.EventHandler(this.load_tarefa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_ListTarefas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.num_nivelTarefa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_nivelRecompensa)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_nivelConsequencia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -267,15 +543,34 @@
         private System.Windows.Forms.NumericUpDown num_nivelTarefa;
         private System.Windows.Forms.Button btn_Alterar;
         private System.Windows.Forms.Button btn_Excluir;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_Tarefa;
+        private System.Windows.Forms.Label label_NivelT;
         private System.Windows.Forms.MaskedTextBox mask_data;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label_Data;
         private System.Windows.Forms.Button btn_ListTarefas;
-        private System.Windows.Forms.Button btn_RC;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label_Dayweek;
         private System.Windows.Forms.ComboBox cmbo_Dayweek;
         private System.Windows.Forms.Button btn_Criarnovo;
+        private System.Windows.Forms.Label label_NivelR;
+        private System.Windows.Forms.Label label_Recompensa;
+        private System.Windows.Forms.NumericUpDown num_nivelRecompensa;
+        private System.Windows.Forms.TextBox text_Recompensa;
+        private System.Windows.Forms.Label label_NivelC;
+        private System.Windows.Forms.Label label_Consequencia;
+        private System.Windows.Forms.NumericUpDown num_nivelConsequencia;
+        private System.Windows.Forms.TextBox text_Consequencia;
+        private System.Windows.Forms.Button btn_VerAgenda;
+        private System.Windows.Forms.CheckedListBox checkedListBox_Segunda;
+        private System.Windows.Forms.CheckedListBox checkedListBox_Terca;
+        private System.Windows.Forms.CheckedListBox checkedListBox_Quarta;
+        private System.Windows.Forms.CheckedListBox checkedListBox_Quinta;
+        private System.Windows.Forms.CheckedListBox checkedListBox_Sexta;
+        private System.Windows.Forms.Label label_S;
+        private System.Windows.Forms.Label label_T;
+        private System.Windows.Forms.Label label_Q;
+        private System.Windows.Forms.Label label_Quinta;
+        private System.Windows.Forms.Label label_Sexta;
+        private System.Windows.Forms.Button btn_NovaTarefa;
     }
 }
 
