@@ -138,6 +138,13 @@ namespace WindowsFormsApplication1
                 }
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Alunos frms = new Alunos();
+            frms.ShowDialog();
+        }
+
         private void btn_ListTarefas_Click(object sender, EventArgs e)
         {
             datagrid_ListTarefas.DataSource = null;//limpa o grid;
